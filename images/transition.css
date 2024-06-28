@@ -1,0 +1,52 @@
+
+/* declared as a global variable */
+/* :root{
+    --dark-red:#981a2c;
+} */
+
+
+.container{
+    border: 3px solid red;
+    background-color: green;
+    height: 500px;
+    width: 500px;
+
+}
+
+.box{
+    border: 2px solid orange;
+    background-color: aqua;
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+
+    /* declare a local variable */
+    /* --dark-red: #981a2c; */
+    /* color: var(--dark-red); */
+
+    /* transition: 2s; */
+
+    /* transition-property: background-color; */
+    /* delay the time of the transition */
+    /* transition-delay: 2s; */
+
+    /* transition: transform 1s ease 1s;
+    transition: all 200ms ease ; */
+
+    /* transition: transform 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s; */
+
+    /* same as above 1 line */
+
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 1s;
+}
+ 
+.box:hover{
+     /* background-color: brown; 
+    transform: rotate(45deg); */
+
+    transform: translateX(300px);
+    
+}
